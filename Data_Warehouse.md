@@ -48,4 +48,16 @@ Alternatively, a snowflake schema is used if there are lots of levels or some in
 
 <img src= "https://github.com/user-attachments/assets/3737bc4b-ca96-48ab-84c9-908e0dc517a5" width="500"></img>
 
-# [Loading into Data Warehouse]() 
+# [Loading into Data Warehouse](https://learn.microsoft.com/en-us/training/modules/load-data-into-microsoft-fabric-data-warehouse/2-explore-data-load-strategies)
+
+## Data Ingestion vs. Data loading
+* **Data ingestion/extract** is about moving raw data from various sources into a central repository
+* **Data loading** involves taking the transformed or processed data and loading it into the final storage destination for analysis and reporting
+
+## Type of Data Loading
+
+<img src = "https://github.com/user-attachments/assets/48161b1f-a522-4292-aeb4-365ac3dde1eb" width="500"></img>
+
+## T-SQL vs. Dataflow Gen2
+
+
