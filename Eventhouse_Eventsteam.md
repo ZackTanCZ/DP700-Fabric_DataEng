@@ -97,3 +97,20 @@ TripsByVendor
 ```
 
 ### Stored Function
+Queries can be encapsulated as an function, with an parameter, using `.create-or-alter function` 
+
+```
+.create-or-alter function trips_by_min_passenger_count(num_passengers:long)
+{
+    Automotive
+    | where passenger_count >= num_passengers 
+    | project trip_id, pickup_datetime
+}
+```
+
+Call the function `trip_by_min_passenger_count()`  
+to get 10 trips with at least three passengers.
+```
+trips_by_min_passenger_count (3)
+| take 10
+```
